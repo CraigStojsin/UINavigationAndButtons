@@ -14,6 +14,9 @@
 		3914C8281ADEF43A0057F33E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3914C8271ADEF43A0057F33E /* Images.xcassets */; };
 		3914C82B1ADEF43A0057F33E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3914C8291ADEF43A0057F33E /* LaunchScreen.xib */; };
 		3914C8371ADEF43A0057F33E /* UInavigationandButtonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914C8361ADEF43A0057F33E /* UInavigationandButtonsTests.m */; };
+		3914C8421ADEF9680057F33E /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914C8411ADEF9680057F33E /* FavouritesViewController.m */; };
+		3914C8451ADEF97A0057F33E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914C8441ADEF97A0057F33E /* ProfileViewController.m */; };
+		3914C8481ADEFEB60057F33E /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914C8471ADEFEB60057F33E /* FeedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		3914C8301ADEF43A0057F33E /* UInavigationandButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UInavigationandButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3914C8351ADEF43A0057F33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3914C8361ADEF43A0057F33E /* UInavigationandButtonsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UInavigationandButtonsTests.m; sourceTree = "<group>"; };
+		3914C8401ADEF9680057F33E /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
+		3914C8411ADEF9680057F33E /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouritesViewController.m; sourceTree = "<group>"; };
+		3914C8431ADEF97A0057F33E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		3914C8441ADEF97A0057F33E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		3914C8461ADEFEB60057F33E /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		3914C8471ADEFEB60057F33E /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +90,14 @@
 		3914C8191ADEF43A0057F33E /* UInavigationandButtons */ = {
 			isa = PBXGroup;
 			children = (
+				3914C8461ADEFEB60057F33E /* FeedViewController.h */,
+				3914C8471ADEFEB60057F33E /* FeedViewController.m */,
 				3914C81E1ADEF43A0057F33E /* AppDelegate.h */,
 				3914C81F1ADEF43A0057F33E /* AppDelegate.m */,
+				3914C8401ADEF9680057F33E /* FavouritesViewController.h */,
+				3914C8411ADEF9680057F33E /* FavouritesViewController.m */,
+				3914C8431ADEF97A0057F33E /* ProfileViewController.h */,
+				3914C8441ADEF97A0057F33E /* ProfileViewController.m */,
 				3914C8211ADEF43A0057F33E /* ViewController.h */,
 				3914C8221ADEF43A0057F33E /* ViewController.m */,
 				3914C8241ADEF43A0057F33E /* Main.storyboard */,
@@ -219,9 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3914C8421ADEF9680057F33E /* FavouritesViewController.m in Sources */,
 				3914C8231ADEF43A0057F33E /* ViewController.m in Sources */,
 				3914C8201ADEF43A0057F33E /* AppDelegate.m in Sources */,
 				3914C81D1ADEF43A0057F33E /* main.m in Sources */,
+				3914C8481ADEFEB60057F33E /* FeedViewController.m in Sources */,
+				3914C8451ADEF97A0057F33E /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

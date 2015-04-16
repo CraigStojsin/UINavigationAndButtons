@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "FeedViewController.h"
+#import "FavouritesViewController.h"
+#import "ProfileViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,9 +20,38 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    CGRect viewRect = [[UIScreen mainScreen]bounds]; self.window = [[UIWindow alloc] initWithFrame:viewRect];
     
+    ProfileViewController *profileViewController = [[ProfileViewController alloc]init];
+    UINavigationController *profileNavController =[[UINavigationController alloc]initWithRootViewController:profileViewController];
+    
+    FeedViewController *feedViewController = [[FeedViewController alloc]init];
+    UINavigationController *feedNavController =[[UINavigationController alloc]
+                                                initWithRootViewController:feedViewController];
+    
+    
+    FavouritesViewController *favouritesViewController = [[FavouritesViewController alloc]init];
+    UINavigationController *favourtiesNavController =[[UINavigationController alloc]initWithRootViewController:favouritesViewController];
+    
+    
+    UITabBarController *tabController = [[UITabBarController alloc]init];
+    tabController.viewControllers = @[profileNavController,feedNavController,favourtiesNavController];
+    
+    
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.rootViewController = tabController;
+    
+    [self.window makeKeyAndVisible];
+    
+    return YES;
+    
+    
+    
+    
+    
+    // Override point for customization after application launch.
+   //CGRect viewRect = [[UIScreen mainScreen]bounds]; self.window = [[UIWindow alloc] initWithFrame:viewRect];
+    
+    /*
     UIViewController *colorTouchVC = [[UIViewController alloc]init];
     UIView *colorView = [[UIView alloc]initWithFrame:viewRect];
     colorView.backgroundColor = [UIColor yellowColor];
@@ -27,7 +60,7 @@
     self.window.rootViewController = colorTouchVC;
     [self.window makeKeyAndVisible];
     
-    NSLog(@"Screen is %f tall and %f wide", viewRect.size.height, viewRect.size.width);
+    NSLog(@"Screen is %f tall and %f wide", viewRect.size.height, viewRect.size.width);*/
     
     
     return YES;
